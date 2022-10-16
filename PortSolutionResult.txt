@@ -1,0 +1,86 @@
+==========
+References
+==========
+GadgetsOnline.Controllers
+Microsoft.AspNetCore.Mvc
+GadgetsOnline.Services
+Microsoft.AspNetCore.Http
+GadgetsOnline.Models
+System
+System.Collections.Generic
+GadgetsOnline.ViewModel
+System.Text.Encodings.Web
+GadgetsOnline.Migrations
+System.Data.Entity.Migrations
+System.Data.Entity.Migrations.Builders
+System.CodeDom.Compiler
+System.Data.Entity.Migrations.Infrastructure
+System.Resources
+System.ComponentModel.DataAnnotations
+Microsoft.EntityFrameworkCore
+System.ComponentModel
+GadgetsOnline
+Microsoft.Extensions.Hosting
+Microsoft.AspNetCore.Hosting
+System.Linq
+Microsoft.Extensions.Configuration
+Microsoft.Extensions.DependencyInjection
+Microsoft.AspNetCore.Builder
+System.Web
+System.Threading.Tasks
+Microsoft.Extensions.Logging
+Microsoft.AspNetCore.HttpsPolicy
+System.Reflection
+project.all
+
+===============
+DownloadedFiles
+===============
+project.all.json
+system.web.json
+
+==============
+ProjectResults
+==============
+----------------------
+Showing results for: C:\Workspace\pa-workshop\ported-app\GadgetsOnline\GadgetsOnline.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+----------------------
+Showing results for: C:\Workspace\pa-workshop\ported-app\GadgetsOnline\GadgetsOnline.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+
+===========
+BuildErrors
+===========
+
+
