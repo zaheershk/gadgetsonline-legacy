@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GadgetsOnline.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,8 +28,23 @@ namespace GadgetsOnline
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // add support for session-management
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromHours(1);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
             services.AddControllersWithViews();
-            //Added Services
+
+            // ensure data seeding
+            using (var context = new GadgetsOnlineEntities())
+            {
+                context.Database.EnsureCreated();
+                context.SaveChanges();
+            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +68,9 @@ namespace GadgetsOnline
             app.UseRouting();
 
             app.UseAuthorization();
+
+            // add support for session-management 
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

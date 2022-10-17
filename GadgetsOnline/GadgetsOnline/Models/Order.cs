@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GadgetsOnline.Models
 {
-    [Bind(Exclude = "OrderId")]
+    //[Bind(Exclude = "OrderId")]
     public class Order
     {
         [ScaffoldColumn(false)]
